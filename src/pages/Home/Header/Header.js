@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../../images/logo2.png'
 import './Header.css'
 
@@ -10,7 +11,7 @@ const Header = () => {
 
             </div>
             <div className="col-lg-6 d-flex justify-content-end button">
-                <button className="btn btn-light  p-2 rounded-pill mb-5 mt-4">Login</button>
+                <Link to="/login"><button className="btn btn-light  p-2 rounded-pill mb-5 mt-4">Login</button></Link>
                 <button className="btn btn-danger  p-2 rounded-pill mb-5 mt-4">SignUP</button>
             </div>
 

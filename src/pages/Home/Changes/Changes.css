@@ -1,0 +1,9 @@
+.change{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+   
+}
+.change:hover{
+    color: black;
+}
