@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Login.css'
 import logo from '../../images/logo2.png'
 
-const Login = () => {
+
+const Signup = () => {
     return (
-        <div className="login">
+        <div className="signup">
             <img className="w-25" src={logo} alt="" />
             <br /><br />
 
-
+            <input type="text" placeholder="name" />
+            <br /><br />
 
             <input type="email" placeholder="email" />
             <br /><br />
@@ -17,19 +18,19 @@ const Login = () => {
             <input type="password" placeholder="password" />
             <br /><br />
 
+            <input type="password" placeholder="confirm password" />
 
 
 
 
 
+            <br /><br />
+            <Link className="text-danger" to="/login">Already have N account</Link><br /><br />
 
-
-
-
-            <Link to="/home"><button className="btn btn-danger rounded-pill m-2">Sign In</button></Link>
+            <Link to="/home"><button className="btn btn-danger rounded-pill m-2">Sign up</button></Link>
             <Link to="/home"><button className="btn btn-danger rounded-pill">Go Back</button></Link>
         </div>
     );
 };
 
-export default Login;
+export default Signup;

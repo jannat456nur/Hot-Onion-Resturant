@@ -5,6 +5,7 @@ import './Homme.css'
 import img1 from "../../images/chef-cook-food-33614.png"
 import img2 from "../../images/architecture-building-city-2047397.png"
 import img3 from "../../images/adult-blur-blurred-background-687824.png"
+import Breakfast from '../Breakfast/Breakfast';
 
 const Homme = () => {
     return (
@@ -17,7 +18,7 @@ const Homme = () => {
                 </div>
                 <div className="col-lg-6 d-flex justify-content-end button">
                     <Link to="/login"><button className="btn btn-light  p-2 rounded-pill mb-5 mt-4">Login</button></Link>
-                    <button className="btn btn-danger  p-2 rounded-pill mb-5 mt-4">SignUP</button>
+                    <Link to="/signup"> <button className="btn btn-danger  p-2 rounded-pill mb-5 mt-4">SignUP</button></Link>
                 </div>
 
             </div>
@@ -26,6 +27,8 @@ const Homme = () => {
                 <input className="w-100% p-3 rounded-pill border border-white" type="text" placeholder="search for food" /> <button className="btn btn-danger p-3 rounded-pill m-auto">Srarch</button>
 
             </div>
+            <Breakfast></Breakfast>
+
             <div className="p-3 m-3 ">
                 <Link to="/breakfast" className="m-3 change">Breakfast</Link>
                 <Link to="/lunch" className="m-3 change">Lunch</Link>

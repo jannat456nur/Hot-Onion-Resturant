@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Breakfast from './pages/Breakfast/Breakfast';
 import Dinner from './pages/Dinner/Dinner';
+import Error from './pages/Error/Error';
 import Banner from './pages/Home/Banner/Banner';
 import Changes from './pages/Home/Changes/Changes';
 import Extra from './pages/Home/Extra/Extra';
@@ -11,6 +12,7 @@ import Header from './pages/Home/Header/Header';
 import Homme from './pages/Homme/Homme';
 import Login from './pages/Login/Login';
 import Lunch from './pages/Lunch/Lunch';
+import Signup from './pages/Signup/Signup';
 
 
 function App() {
@@ -38,7 +40,7 @@ function App() {
 
 
 
-        <Breakfast></Breakfast>
+
 
 
         {/* <Header></Header>
@@ -48,6 +50,7 @@ function App() {
           <Route exact path="/">
 
             <Homme></Homme>
+
           </Route>
           <Route exact path="/home">
 
@@ -65,15 +68,16 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          {/* <Route path="/dinner">
-            <Dinner></Dinner>
-          </Route> */}
+          <Route path="/signup">
+            <Signup></Signup>
+          </Route>
+          <Route path="*">
+            <Error></Error>
+          </Route>
         </Switch>
 
       </BrowserRouter>
-      {/* <Breakfast></Breakfast> */}
-      {/* <Extra></Extra>
-      <Footer></Footer> */}
+
     </div>
   );
 }
