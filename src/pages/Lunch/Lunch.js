@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Brk from '../Brk/Brk';
 import Lun from '../Lun/Lun';
 
@@ -23,6 +24,7 @@ const Lunch = () => {
                 }
 
             </div>
+            <Link to="/home"><button className="btn btn-danger rounded-pill">Go Back</button></Link>
         </div>
     );
 };

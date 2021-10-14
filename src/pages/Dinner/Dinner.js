@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Din from '../Din/Din';
 
 const Dinner = () => {
@@ -11,7 +12,7 @@ const Dinner = () => {
     }, [])
     return (
         <div>
-            <h2>Breakfast</h2>
+            <h2>Dinner</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4 breakfast">
 
                 {
@@ -23,6 +24,7 @@ const Dinner = () => {
                 }
 
             </div>
+            <Link to="/home"><button className="btn btn-danger rounded-pill">Go Back</button></Link>
         </div>
     );
 };

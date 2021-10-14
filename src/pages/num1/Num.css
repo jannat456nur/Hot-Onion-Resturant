@@ -3,9 +3,6 @@
     /* padding-right: 10px; */
     margin-right: 300px;
  }
- .hot-bg-danger{
-     background-color: rgba(255, 0, 0, 0.404);
- }
  .login-button {
      padding-left: 10px;
      margin-left: 80px;
@@ -17,7 +14,7 @@
    
  }
  .banner{
-    background-image: url(../../images/bannerbackground.png);
+    background-image: url(../../images//bannerbackground.png);
 padding: 15%;
 background-repeat: no-repeat;
     

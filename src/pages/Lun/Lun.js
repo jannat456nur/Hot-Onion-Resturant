@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Lun = (props) => {
     const { img, id, name, p, price } = props.brkfs;
@@ -12,6 +13,7 @@ const Lun = (props) => {
                         <h5 class="card-title">{name}</h5>
                         <p class="card-text">{p}</p>
                         <h4>{price}</h4>
+                        <Link to={`/detail/${id}`}><button className="btn btn-danger rounded-pill">Details</button></Link>
                     </div>
                 </div>
             </div>
